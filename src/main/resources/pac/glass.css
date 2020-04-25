@@ -1,0 +1,289 @@
+.anchorPane {
+    -fx-background-color: #242424;
+    -fx-pref-width: 800px;
+    -fx-pref-height: 800px;
+    -fx-max-height: 700px;
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.boxPrice {
+    -fx-pref-width:       45px;
+    -fx-pref-height:      800px;
+}
+
+.boxGlass {
+    -fx-pref-width:       30px;
+    -fx-pref-height:      800px;
+}
+
+.boxBigBuy {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxBigSell {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxOneBuy {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxOneSell {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxOneBar {
+    -fx-pref-width:       1px;
+    -fx-pref-height:      800px;
+    -fx-background-color: yellow;
+}
+
+.boxTwoBuy {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxTwoSell {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxTwoBar {
+    -fx-pref-width:       1px;
+    -fx-pref-height:      800px;
+        -fx-background-color: yellow;
+
+}
+
+.boxThreeBuy {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxThreeSell {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxThreeBar {
+    -fx-pref-width:       1px;
+    -fx-pref-height:      800px;
+        -fx-background-color: yellow;
+
+}
+
+.boxFourBuy {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxFourSell {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxFourBar {
+    -fx-pref-width:       1px;
+    -fx-pref-height:      800px;
+        -fx-background-color: yellow;
+
+}
+
+.boxFiveBuy {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxFiveSell {
+    -fx-pref-width:       20px;
+    -fx-pref-height:      800px;
+}
+
+.boxFiveBar {
+    -fx-pref-width:       1px;
+    -fx-pref-height:      800px;
+        -fx-background-color: yellow;
+
+}
+
+
+.labelPrice {
+    -fx-pref-width: 45px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: #CFCFCF;
+    -fx-font-size: 10px;
+}
+
+.labelGlass {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: #CFCFCF;
+    -fx-font-size: 10px;
+}
+
+.labelBigBuy {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: green;
+    -fx-font-size: 10px;
+}
+
+.labelBigSell {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: red;
+    -fx-font-size: 10px;
+}
+
+.labelOneBuy {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: green;
+    -fx-font-size: 10px;
+}
+
+.labelOneSell {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: red;
+    -fx-font-size: 10px;
+}
+
+.labelTwoBuy {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: green;
+    -fx-font-size: 10px;
+}
+
+.labelTwoSell {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: red;
+    -fx-font-size: 10px;
+}
+
+.labelThreeBuy {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: green;
+    -fx-font-size: 10px;
+}
+
+.labelThreeSell {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: red;
+    -fx-font-size: 10px;
+}
+
+.labelFourBuy {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: green;
+    -fx-font-size: 10px;
+}
+
+.labelFourSell {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: red;
+    -fx-font-size: 10px;
+}
+
+.labelFiveBuy {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: green;
+    -fx-font-size: 10px;
+}
+
+.labelFiveSell {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: red;
+    -fx-font-size: 10px;
+}
+.boxPriceTop {
+        -fx-pref-width: 45px;
+        -fx-pref-height: 400px;
+}
+
+.boxPriceBottom {
+        -fx-pref-width: 45px;
+        -fx-pref-height: 400px;
+}
+
+.labelPriceSell {
+    -fx-pref-width: 45px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: #CFCFCF;
+    -fx-font-size: 10px;
+}
+
+.labelPriceBuy {
+    -fx-pref-width: 45px;
+    -fx-pref-height: 20px;
+    -fx-background-color: #242424;
+    -fx-text-fill: #CFCFCF;
+    -fx-font-size: 10px;
+}
+
+
+.glassBuy {
+    -fx-border-width: 0.5pt;
+    -fx-border-color: green;
+    -fx-opacity: 0.8;
+}
+
+.glassSell {
+    -fx-border-width: 0.5pt;
+    -fx-border-color: red;
+    -fx-opacity: 0.8;
+}
+
+
+
+.boxPriceTop : active {
+    -fx-background-color: green;
+}
+
+
+
+
+
+
+.box : hover {
+    -fx-background-color: red;
+    -fx-opacity: 0.8;
+}
+
+.boxPriceTop : hover {
+    -fx-text-fill: FF4019;
+
+}
+
+.boxPriceBottom : hover {
+    -fx-text-fill: #33FF33;
+
+}
