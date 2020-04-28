@@ -21,6 +21,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class SecondaryController {
     @FXML
@@ -63,6 +64,8 @@ public class SecondaryController {
     private VBox boxFiveSell;
     @FXML
     private Label labelTime;
+    double priceOpen;
+    double priceClose;
 
     private static double tempDouble;
     private List<String> listTick = new ArrayList<>();
@@ -76,7 +79,11 @@ public class SecondaryController {
 
 
 
-
+    ObservableList<Node> listBoxOneBar;
+    ObservableList<Node> listBoxTwoBar;
+    ObservableList<Node> listBoxThreeBar;
+    ObservableList<Node> listBoxFourBar;
+    ObservableList<Node> listBoxFiveBar;
     ObservableList<Node> listBoxPrice;
     ObservableList<Node> listBoxGlass;
     ObservableList<Node> listBoxBigBuy;
@@ -94,24 +101,30 @@ public class SecondaryController {
     
     public void initialize() {
 
-         listBoxPrice     = boxPrice.getChildren();
-         listBoxGlass     = boxGlass.getChildren();
-         listBoxBigBuy    = boxBigBuy.getChildren();
-         listBoxBigSell   = boxBigSell.getChildren();
-         listBoxOneBuy    = boxOneBuy.getChildren();
-         listBoxOneSell   = boxOneSell.getChildren();
-         listBoxTwoBuy    = boxTwoBuy.getChildren();
-         listBoxTwoSell   = boxTwoSell.getChildren();
-         listBoxThreeBuy  = boxThreeBuy.getChildren();
-         listBoxThreeSell = boxThreeSell.getChildren();
-         listBoxFourBuy   = boxFourBuy.getChildren();
-         listBoxFourSell  = boxFourSell.getChildren();
-         listBoxFiveBuy   = boxFiveBuy.getChildren();
-         listBoxFiveSell  = boxFiveSell.getChildren();
-        barListView.add(new BarView(listBoxFiveBuy, listBoxFiveSell));
-        barListView.add(new BarView(listBoxFourBuy, listBoxFourSell));
-        barListView.add(new BarView(listBoxThreeBuy, listBoxThreeSell));
-        barListView.add(new BarView(listBoxTwoBuy, listBoxTwoSell));
+        listBoxOneBar    = boxOneBar.getChildren();
+        listBoxTwoBar    = boxTwoBar.getChildren();
+        listBoxThreeBar  = boxThreeBar.getChildren();
+        listBoxFourBar   = boxFourBar.getChildren();
+        listBoxFiveBar   = boxFiveBar.getChildren();
+        listBoxPrice     = boxPrice.getChildren();
+        listBoxGlass     = boxGlass.getChildren();
+        listBoxBigBuy    = boxBigBuy.getChildren();
+        listBoxBigSell   = boxBigSell.getChildren();
+        listBoxOneBuy    = boxOneBuy.getChildren();
+        listBoxOneSell   = boxOneSell.getChildren();
+        listBoxTwoBuy    = boxTwoBuy.getChildren();
+        listBoxTwoSell   = boxTwoSell.getChildren();
+        listBoxThreeBuy  = boxThreeBuy.getChildren();
+        listBoxThreeSell = boxThreeSell.getChildren();
+        listBoxFourBuy   = boxFourBuy.getChildren();
+        listBoxFourSell  = boxFourSell.getChildren();
+        listBoxFiveBuy   = boxFiveBuy.getChildren();
+        listBoxFiveSell  = boxFiveSell.getChildren();
+
+        barListView.add(new BarView(listBoxFiveBuy, listBoxFiveSell, listBoxFiveBar));
+        barListView.add(new BarView(listBoxFourBuy, listBoxFourSell, listBoxFourBar));
+        barListView.add(new BarView(listBoxThreeBuy, listBoxThreeSell, listBoxThreeBar));
+        barListView.add(new BarView(listBoxTwoBuy, listBoxTwoSell, listBoxTwoBar));
 
         Timeline fiveSecondsWonder = new Timeline(new KeyFrame(Duration.millis(1), new EventHandler<ActionEvent>() {
 
@@ -134,7 +147,6 @@ public class SecondaryController {
         listGlass = readFile(listGlass, pathGlass);
         if (listGlass == null || listTick == null) return;
         printAll();
-
     }
 
     private void printAll () {
@@ -153,6 +165,7 @@ public class SecondaryController {
             printOneBar(listTick);
             printBoxGlass();
             printAllBars();
+            priceOpen = Double.parseDouble(listTick.get(listTick.size() - 1).split("\\s+")[1]);
             return;
         }
         List<String> tempList = new ArrayList<>();
@@ -171,6 +184,8 @@ public class SecondaryController {
         timeMsk = lastElement.split("\\s+")[5].substring(10);
         printBoxGlass();
         printOneBar(tempList);
+        priceClose = Double.parseDouble(listTick.get(0).split("\\s+")[1]);
+
     }
 
     private void printAllBars() {
@@ -179,16 +194,41 @@ public class SecondaryController {
             ObservableList<Node> listOutBuy = barListView.get(i).getBuy();
             Map<Double, Integer> mapSell = barList.get(i).getSell();
             ObservableList<Node> listOutSell = barListView.get(i).getSell();
+            ObservableList<Node> listOutBar = barListView.get(i).getBar();
+            double priceOpen = barList.get(i).getOpen();
+            double priceClose = barList.get(i).getClose();
 
+            printBar(priceOpen, priceClose, listOutBar);
             printBarCenter(mapBuy, listOutBuy);
             printBarCenter(mapSell, listOutSell);
         }
     }
 
+    private void printBar(double priceOpen, double priceClose, ObservableList<Node> listOutBar) {
+        String colorBar = priceOpen - priceClose < 0 ? "upBar" : priceOpen - priceClose > 0 ? "downBar" : "equalsBar";
+        double max = Math.max(priceClose, priceOpen);
+        double min = Math.min(priceClose, priceOpen);
+
+        listOutBar.stream().map(x-> (Label) x).forEach(x-> {
+            List<String> l = new ArrayList<>(x.getStyleClass());
+            x.getStyleClass().removeAll(l);
+        });
+
+        listBoxPrice.stream().map(x-> (Label) x)
+            .filter(x-> min <= Double.parseDouble(x.getText()) && max >= Double.parseDouble(x.getText()))
+            .forEach(x-> {
+                int id = Integer.parseInt(x.getId().replaceAll("price", ""));
+                Label label = (Label) listOutBar.get(id);
+                label.getStyleClass().add(colorBar); });
+    }
+
+
     private void getLastBar() {
         Bar lastBar = new Bar();
         lastBar.setBuy(getMapBar(listBoxOneBuy, "oneBuy"));
         lastBar.setSell(getMapBar(listBoxOneSell, "oneSell"));
+        lastBar.setOpen(priceOpen);
+        lastBar.setOpen(priceClose);
         if (barList.size() == 4)
             barList.remove(0);
         barList.add(lastBar);
@@ -309,8 +349,6 @@ public class SecondaryController {
      *   This logic method: begin find price zero element from list file
      */
     void printBoxGlass () {
-
-
         Label labelGlass1 = (Label) listBoxGlass.get(0);
         Label labelGlass38 = (Label) listBoxGlass.get(39);
         if (!labelGlass1.getText().equals("") || !labelGlass38.getText().equals("")) {
@@ -366,9 +404,6 @@ public class SecondaryController {
         Map<Double, Integer> map = new TreeMap<>();
         list.stream().map(x-> (Label) x).forEach(x-> {
             if (!x.getText().equals("")) {
-//                for (int i = 0; i < 10; i++) {
-//                    System.out.println(x.getId().replaceAll(str, ""));
-//                }
                 int id = Integer.parseInt(x.getId().replaceAll(str, ""));
                 Label label = (Label) listBoxPrice.get(id);
                 double price = Double.parseDouble(label.getText());

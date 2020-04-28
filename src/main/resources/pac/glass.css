@@ -111,6 +111,17 @@
 
 }
 
+.upBar {
+    -fx-background-color: green;
+}
+
+.downBar {
+    -fx-background-color: red;
+}
+
+.equalsBar {
+    -fx-background-color: yellow;
+}
 
 .labelPrice {
     -fx-pref-width: 45px;
