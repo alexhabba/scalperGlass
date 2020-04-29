@@ -211,6 +211,7 @@ public class SecondaryController {
 
         listOutBar.stream().map(x-> (Label) x).forEach(x-> {
             List<String> l = new ArrayList<>(x.getStyleClass());
+            l.remove("labelBar");
             x.getStyleClass().removeAll(l);
         });
 
@@ -228,7 +229,7 @@ public class SecondaryController {
         lastBar.setBuy(getMapBar(listBoxOneBuy, "oneBuy"));
         lastBar.setSell(getMapBar(listBoxOneSell, "oneSell"));
         lastBar.setOpen(priceOpen);
-        lastBar.setOpen(priceClose);
+        lastBar.setClose(priceClose);
         if (barList.size() == 4)
             barList.remove(0);
         barList.add(lastBar);

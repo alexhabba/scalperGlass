@@ -260,6 +260,11 @@
     -fx-font-size: 10px;
 }
 
+.labelBar {
+    -fx-min-width: 1px;
+    -fx-min-height: 20px;
+}
+
 
 .glassBuy {
     -fx-border-width: 0.5pt;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="800.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchorPane" stylesheets="@glass.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pac.SecondaryController">
+<AnchorPane maxHeight="800.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchorPane" stylesheets="@glass.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pac.SecondaryController">
    <children>
       <VBox fx:id="boxPrice" layoutX="755.0" prefHeight="200.0" prefWidth="100.0" styleClass="boxPrice" AnchorPane.rightAnchor="0.0">
          <children>
@@ -230,46 +230,46 @@
       </VBox>
       <VBox fx:id="boxOneBar" layoutX="246.0" layoutY="100.0" prefHeight="519.0" prefWidth="100.0" styleClass="boxOneBar" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="oneBar0" />
-            <Label fx:id="oneBar1" />
-            <Label fx:id="oneBar2" />
-            <Label fx:id="oneBar3" />
-            <Label fx:id="oneBar4" />
-            <Label fx:id="oneBar5" />
-            <Label fx:id="oneBar6" />
-            <Label fx:id="oneBar7" />
-            <Label fx:id="oneBar8" />
-            <Label fx:id="oneBar9" />
-            <Label fx:id="oneBar10" />
-            <Label fx:id="oneBar11" />
-            <Label fx:id="oneBar12" />
-            <Label fx:id="oneBar13" />
-            <Label fx:id="oneBar14" />
-            <Label fx:id="oneBar15" />
-            <Label fx:id="oneBar16" />
-            <Label fx:id="oneBar17" />
-            <Label fx:id="oneBar18" />
-            <Label fx:id="oneBar19" />
-            <Label fx:id="oneBar20" />
-            <Label fx:id="oneBar21" />
-            <Label fx:id="oneBar22" />
-            <Label fx:id="oneBar23" />
-            <Label fx:id="oneBar24" />
-            <Label fx:id="oneBar25" />
-            <Label fx:id="oneBar26" />
-            <Label fx:id="oneBar27" />
-            <Label fx:id="oneBar28" />
-            <Label fx:id="oneBar29" />
-            <Label fx:id="oneBar30" />
-            <Label fx:id="oneBar31" />
-            <Label fx:id="oneBar32" />
-            <Label fx:id="oneBar33" />
-            <Label fx:id="oneBar34" />
-            <Label fx:id="oneBar35" />
-            <Label fx:id="oneBar36" />
-            <Label fx:id="oneBar37" />
-            <Label fx:id="oneBar38" />
-            <Label fx:id="oneBar39" />
+            <Label fx:id="oneBar0" styleClass="labelBar" />
+            <Label fx:id="oneBar1" styleClass="labelBar" />
+            <Label fx:id="oneBar2" styleClass="labelBar" />
+            <Label fx:id="oneBar3" styleClass="labelBar" />
+            <Label fx:id="oneBar4" styleClass="labelBar" />
+            <Label fx:id="oneBar5" styleClass="labelBar" />
+            <Label fx:id="oneBar6" styleClass="labelBar" />
+            <Label fx:id="oneBar7" styleClass="labelBar" />
+            <Label fx:id="oneBar8" styleClass="labelBar" />
+            <Label fx:id="oneBar9" styleClass="labelBar" />
+            <Label fx:id="oneBar10" styleClass="labelBar" />
+            <Label fx:id="oneBar11" styleClass="labelBar" />
+            <Label fx:id="oneBar12" styleClass="labelBar" />
+            <Label fx:id="oneBar13" styleClass="labelBar" />
+            <Label fx:id="oneBar14" styleClass="labelBar" />
+            <Label fx:id="oneBar15" styleClass="labelBar" />
+            <Label fx:id="oneBar16" styleClass="labelBar" />
+            <Label fx:id="oneBar17" styleClass="labelBar" />
+            <Label fx:id="oneBar18" styleClass="labelBar" />
+            <Label fx:id="oneBar19" styleClass="labelBar" />
+            <Label fx:id="oneBar20" styleClass="labelBar" />
+            <Label fx:id="oneBar21" styleClass="labelBar" />
+            <Label fx:id="oneBar22" styleClass="labelBar" />
+            <Label fx:id="oneBar23" styleClass="labelBar" />
+            <Label fx:id="oneBar24" styleClass="labelBar" />
+            <Label fx:id="oneBar25" styleClass="labelBar" />
+            <Label fx:id="oneBar26" styleClass="labelBar" />
+            <Label fx:id="oneBar27" styleClass="labelBar" />
+            <Label fx:id="oneBar28" styleClass="labelBar" />
+            <Label fx:id="oneBar29" styleClass="labelBar" />
+            <Label fx:id="oneBar30" styleClass="labelBar" />
+            <Label fx:id="oneBar31" styleClass="labelBar" />
+            <Label fx:id="oneBar32" styleClass="labelBar" />
+            <Label fx:id="oneBar33" styleClass="labelBar" />
+            <Label fx:id="oneBar34" styleClass="labelBar" />
+            <Label fx:id="oneBar35" styleClass="labelBar" />
+            <Label fx:id="oneBar36" styleClass="labelBar" />
+            <Label fx:id="oneBar37" styleClass="labelBar" />
+            <Label fx:id="oneBar38" styleClass="labelBar" />
+            <Label fx:id="oneBar39" styleClass="labelBar" />
          </children>
       </VBox>
       <VBox fx:id="boxOneSell" layoutX="555.0" layoutY="117.0" prefHeight="200.0" prefWidth="100.0" styleClass="boxOneSell" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="0.0">
@@ -363,46 +363,46 @@
       </VBox>
       <VBox fx:id="boxTwoBar" layoutX="246.0" layoutY="100.0" prefHeight="519.0" prefWidth="100.0" styleClass="boxTwoBar" AnchorPane.rightAnchor="194.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="twoBar0" />
-            <Label fx:id="twoBar1" />
-            <Label fx:id="twoBar2" />
-            <Label fx:id="twoBar3" />
-            <Label fx:id="twoBar4" />
-            <Label fx:id="twoBar5" />
-            <Label fx:id="twoBar6" />
-            <Label fx:id="twoBar7" />
-            <Label fx:id="twoBar8" />
-            <Label fx:id="twoBar9" />
-            <Label fx:id="twoBar10" />
-            <Label fx:id="twoBar11" />
-            <Label fx:id="twoBar12" />
-            <Label fx:id="twoBar13" />
-            <Label fx:id="twoBar14" />
-            <Label fx:id="twoBar15" />
-            <Label fx:id="twoBar16" />
-            <Label fx:id="twoBar17" />
-            <Label fx:id="twoBar18" />
-            <Label fx:id="twoBar19" />
-            <Label fx:id="twoBar20" />
-            <Label fx:id="twoBar21" />
-            <Label fx:id="twoBar22" />
-            <Label fx:id="twoBar23" />
-            <Label fx:id="twoBar24" />
-            <Label fx:id="twoBar25" />
-            <Label fx:id="twoBar26" />
-            <Label fx:id="twoBar27" />
-            <Label fx:id="twoBar28" />
-            <Label fx:id="twoBar29" />
-            <Label fx:id="twoBar30" />
-            <Label fx:id="twoBar31" />
-            <Label fx:id="twoBar32" />
-            <Label fx:id="twoBar33" />
-            <Label fx:id="twoBar34" />
-            <Label fx:id="twoBar35" />
-            <Label fx:id="twoBar36" />
-            <Label fx:id="twoBar37" />
-            <Label fx:id="twoBar38" />
-            <Label fx:id="twoBar39" />
+            <Label fx:id="twoBar0" styleClass="labelBar" />
+            <Label fx:id="twoBar1" styleClass="labelBar" />
+            <Label fx:id="twoBar2" styleClass="labelBar" />
+            <Label fx:id="twoBar3" styleClass="labelBar" />
+            <Label fx:id="twoBar4" styleClass="labelBar" />
+            <Label fx:id="twoBar5" styleClass="labelBar" />
+            <Label fx:id="twoBar6" styleClass="labelBar" />
+            <Label fx:id="twoBar7" styleClass="labelBar" />
+            <Label fx:id="twoBar8" styleClass="labelBar" />
+            <Label fx:id="twoBar9" styleClass="labelBar" />
+            <Label fx:id="twoBar10" styleClass="labelBar" />
+            <Label fx:id="twoBar11" styleClass="labelBar" />
+            <Label fx:id="twoBar12" styleClass="labelBar" />
+            <Label fx:id="twoBar13" styleClass="labelBar" />
+            <Label fx:id="twoBar14" styleClass="labelBar" />
+            <Label fx:id="twoBar15" styleClass="labelBar" />
+            <Label fx:id="twoBar16" styleClass="labelBar" />
+            <Label fx:id="twoBar17" styleClass="labelBar" />
+            <Label fx:id="twoBar18" styleClass="labelBar" />
+            <Label fx:id="twoBar19" styleClass="labelBar" />
+            <Label fx:id="twoBar20" styleClass="labelBar" />
+            <Label fx:id="twoBar21" styleClass="labelBar" />
+            <Label fx:id="twoBar22" styleClass="labelBar" />
+            <Label fx:id="twoBar23" styleClass="labelBar" />
+            <Label fx:id="twoBar24" styleClass="labelBar" />
+            <Label fx:id="twoBar25" styleClass="labelBar" />
+            <Label fx:id="twoBar26" styleClass="labelBar" />
+            <Label fx:id="twoBar27" styleClass="labelBar" />
+            <Label fx:id="twoBar28" styleClass="labelBar" />
+            <Label fx:id="twoBar29" styleClass="labelBar" />
+            <Label fx:id="twoBar30" styleClass="labelBar" />
+            <Label fx:id="twoBar31" styleClass="labelBar" />
+            <Label fx:id="twoBar32" styleClass="labelBar" />
+            <Label fx:id="twoBar33" styleClass="labelBar" />
+            <Label fx:id="twoBar34" styleClass="labelBar" />
+            <Label fx:id="twoBar35" styleClass="labelBar" />
+            <Label fx:id="twoBar36" styleClass="labelBar" />
+            <Label fx:id="twoBar37" styleClass="labelBar" />
+            <Label fx:id="twoBar38" styleClass="labelBar" />
+            <Label fx:id="twoBar39" styleClass="labelBar" />
          </children>
       </VBox>
       <VBox fx:id="boxTwoSell" layoutX="565.0" layoutY="127.0" prefHeight="200.0" prefWidth="100.0" styleClass="boxTwoSell" AnchorPane.rightAnchor="195.0" AnchorPane.topAnchor="0.0">
@@ -496,46 +496,46 @@
       </VBox>
       <VBox fx:id="boxThreeBar" layoutX="246.0" layoutY="100.0" prefHeight="519.0" prefWidth="100.0" styleClass="boxThreeBar" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="threeBar0" />
-            <Label fx:id="threeBar1" />
-            <Label fx:id="threeBar2" />
-            <Label fx:id="threeBar3" />
-            <Label fx:id="threeBar4" />
-            <Label fx:id="threeBar5" />
-            <Label fx:id="threeBar6" />
-            <Label fx:id="threeBar7" />
-            <Label fx:id="threeBar8" />
-            <Label fx:id="threeBar9" />
-            <Label fx:id="threeBar10" />
-            <Label fx:id="threeBar11" />
-            <Label fx:id="threeBar12" />
-            <Label fx:id="threeBar13" />
-            <Label fx:id="threeBar14" />
-            <Label fx:id="threeBar15" />
-            <Label fx:id="threeBar16" />
-            <Label fx:id="threeBar17" />
-            <Label fx:id="threeBar18" />
-            <Label fx:id="threeBar19" />
-            <Label fx:id="threeBar20" />
-            <Label fx:id="threeBar21" />
-            <Label fx:id="threeBar22" />
-            <Label fx:id="threeBar23" />
-            <Label fx:id="threeBar24" />
-            <Label fx:id="threeBar25" />
-            <Label fx:id="threeBar26" />
-            <Label fx:id="threeBar27" />
-            <Label fx:id="threeBar28" />
-            <Label fx:id="threeBar29" />
-            <Label fx:id="threeBar30" />
-            <Label fx:id="threeBar31" />
-            <Label fx:id="threeBar32" />
-            <Label fx:id="threeBar33" />
-            <Label fx:id="threeBar34" />
-            <Label fx:id="threeBar35" />
-            <Label fx:id="threeBar36" />
-            <Label fx:id="threeBar37" />
-            <Label fx:id="threeBar38" />
-            <Label fx:id="threeBar39" />
+            <Label fx:id="threeBar0" styleClass="labelBar" />
+            <Label fx:id="threeBar1" styleClass="labelBar" />
+            <Label fx:id="threeBar2" styleClass="labelBar" />
+            <Label fx:id="threeBar3" styleClass="labelBar" />
+            <Label fx:id="threeBar4" styleClass="labelBar" />
+            <Label fx:id="threeBar5" styleClass="labelBar" />
+            <Label fx:id="threeBar6" styleClass="labelBar" />
+            <Label fx:id="threeBar7" styleClass="labelBar" />
+            <Label fx:id="threeBar8" styleClass="labelBar" />
+            <Label fx:id="threeBar9" styleClass="labelBar" />
+            <Label fx:id="threeBar10" styleClass="labelBar" />
+            <Label fx:id="threeBar11" styleClass="labelBar" />
+            <Label fx:id="threeBar12" styleClass="labelBar" />
+            <Label fx:id="threeBar13" styleClass="labelBar" />
+            <Label fx:id="threeBar14" styleClass="labelBar" />
+            <Label fx:id="threeBar15" styleClass="labelBar" />
+            <Label fx:id="threeBar16" styleClass="labelBar" />
+            <Label fx:id="threeBar17" styleClass="labelBar" />
+            <Label fx:id="threeBar18" styleClass="labelBar" />
+            <Label fx:id="threeBar19" styleClass="labelBar" />
+            <Label fx:id="threeBar20" styleClass="labelBar" />
+            <Label fx:id="threeBar21" styleClass="labelBar" />
+            <Label fx:id="threeBar22" styleClass="labelBar" />
+            <Label fx:id="threeBar23" styleClass="labelBar" />
+            <Label fx:id="threeBar24" styleClass="labelBar" />
+            <Label fx:id="threeBar25" styleClass="labelBar" />
+            <Label fx:id="threeBar26" styleClass="labelBar" />
+            <Label fx:id="threeBar27" styleClass="labelBar" />
+            <Label fx:id="threeBar28" styleClass="labelBar" />
+            <Label fx:id="threeBar29" styleClass="labelBar" />
+            <Label fx:id="threeBar30" styleClass="labelBar" />
+            <Label fx:id="threeBar31" styleClass="labelBar" />
+            <Label fx:id="threeBar32" styleClass="labelBar" />
+            <Label fx:id="threeBar33" styleClass="labelBar" />
+            <Label fx:id="threeBar34" styleClass="labelBar" />
+            <Label fx:id="threeBar35" styleClass="labelBar" />
+            <Label fx:id="threeBar36" styleClass="labelBar" />
+            <Label fx:id="threeBar37" styleClass="labelBar" />
+            <Label fx:id="threeBar38" styleClass="labelBar" />
+            <Label fx:id="threeBar39" styleClass="labelBar" />
          </children>
       </VBox>
       <VBox fx:id="boxThreeSell" layoutX="555.0" layoutY="117.0" prefHeight="200.0" prefWidth="100.0" styleClass="boxThreeSell" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="0.0">
@@ -629,46 +629,46 @@
       </VBox>
       <VBox fx:id="boxFourBar" layoutX="246.0" layoutY="100.0" prefHeight="519.0" prefWidth="100.0" styleClass="boxFourBar" AnchorPane.rightAnchor="294.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="fourBar0" />
-            <Label fx:id="fourBar1" />
-            <Label fx:id="fourBar2" />
-            <Label fx:id="fourBar3" />
-            <Label fx:id="fourBar4" />
-            <Label fx:id="fourBar5" />
-            <Label fx:id="fourBar6" />
-            <Label fx:id="fourBar7" />
-            <Label fx:id="fourBar8" />
-            <Label fx:id="fourBar9" />
-            <Label fx:id="fourBar10" />
-            <Label fx:id="fourBar11" />
-            <Label fx:id="fourBar12" />
-            <Label fx:id="fourBar13" />
-            <Label fx:id="fourBar14" />
-            <Label fx:id="fourBar15" />
-            <Label fx:id="fourBar16" />
-            <Label fx:id="fourBar17" />
-            <Label fx:id="fourBar18" />
-            <Label fx:id="fourBar19" />
-            <Label fx:id="fourBar20" />
-            <Label fx:id="fourBar21" />
-            <Label fx:id="fourBar22" />
-            <Label fx:id="fourBar23" />
-            <Label fx:id="fourBar24" />
-            <Label fx:id="fourBar25" />
-            <Label fx:id="fourBar26" />
-            <Label fx:id="fourBar27" />
-            <Label fx:id="fourBar28" />
-            <Label fx:id="fourBar29" />
-            <Label fx:id="fourBar30" />
-            <Label fx:id="fourBar31" />
-            <Label fx:id="fourBar32" />
-            <Label fx:id="fourBar33" />
-            <Label fx:id="fourBar34" />
-            <Label fx:id="fourBar35" />
-            <Label fx:id="fourBar36" />
-            <Label fx:id="fourBar37" />
-            <Label fx:id="fourBar38" />
-            <Label fx:id="fourBar39" />
+            <Label fx:id="fourBar0" styleClass="labelBar" />
+            <Label fx:id="fourBar1" styleClass="labelBar" />
+            <Label fx:id="fourBar2" styleClass="labelBar" />
+            <Label fx:id="fourBar3" styleClass="labelBar" />
+            <Label fx:id="fourBar4" styleClass="labelBar" />
+            <Label fx:id="fourBar5" styleClass="labelBar" />
+            <Label fx:id="fourBar6" styleClass="labelBar" />
+            <Label fx:id="fourBar7" styleClass="labelBar" />
+            <Label fx:id="fourBar8" styleClass="labelBar" />
+            <Label fx:id="fourBar9" styleClass="labelBar" />
+            <Label fx:id="fourBar10" styleClass="labelBar" />
+            <Label fx:id="fourBar11" styleClass="labelBar" />
+            <Label fx:id="fourBar12" styleClass="labelBar" />
+            <Label fx:id="fourBar13" styleClass="labelBar" />
+            <Label fx:id="fourBar14" styleClass="labelBar" />
+            <Label fx:id="fourBar15" styleClass="labelBar" />
+            <Label fx:id="fourBar16" styleClass="labelBar" />
+            <Label fx:id="fourBar17" styleClass="labelBar" />
+            <Label fx:id="fourBar18" styleClass="labelBar" />
+            <Label fx:id="fourBar19" styleClass="labelBar" />
+            <Label fx:id="fourBar20" styleClass="labelBar" />
+            <Label fx:id="fourBar21" styleClass="labelBar" />
+            <Label fx:id="fourBar22" styleClass="labelBar" />
+            <Label fx:id="fourBar23" styleClass="labelBar" />
+            <Label fx:id="fourBar24" styleClass="labelBar" />
+            <Label fx:id="fourBar25" styleClass="labelBar" />
+            <Label fx:id="fourBar26" styleClass="labelBar" />
+            <Label fx:id="fourBar27" styleClass="labelBar" />
+            <Label fx:id="fourBar28" styleClass="labelBar" />
+            <Label fx:id="fourBar29" styleClass="labelBar" />
+            <Label fx:id="fourBar30" styleClass="labelBar" />
+            <Label fx:id="fourBar31" styleClass="labelBar" />
+            <Label fx:id="fourBar32" styleClass="labelBar" />
+            <Label fx:id="fourBar33" styleClass="labelBar" />
+            <Label fx:id="fourBar34" styleClass="labelBar" />
+            <Label fx:id="fourBar35" styleClass="labelBar" />
+            <Label fx:id="fourBar36" styleClass="labelBar" />
+            <Label fx:id="fourBar37" styleClass="labelBar" />
+            <Label fx:id="fourBar38" styleClass="labelBar" />
+            <Label fx:id="fourBar39" styleClass="labelBar" />
          </children>
       </VBox>
       <VBox fx:id="boxFourSell" layoutX="565.0" layoutY="127.0" prefHeight="200.0" prefWidth="100.0" styleClass="boxFourSell" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="0.0">
@@ -761,46 +761,46 @@
       </VBox>
       <VBox fx:id="boxFiveBar" layoutX="246.0" layoutY="100.0" prefHeight="519.0" prefWidth="100.0" styleClass="boxFiveBar" AnchorPane.rightAnchor="344.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label fx:id="fiveBar0" />
-            <Label fx:id="fiveBar1" />
-            <Label fx:id="fiveBar2" />
-            <Label fx:id="fiveBar3" />
-            <Label fx:id="fiveBar4" />
-            <Label fx:id="fiveBar5" />
-            <Label fx:id="fiveBar6" />
-            <Label fx:id="fiveBar7" />
-            <Label fx:id="fiveBar8" />
-            <Label fx:id="fiveBar9" />
-            <Label fx:id="fiveBar10" />
-            <Label fx:id="fiveBar11" />
-            <Label fx:id="fiveBar12" />
-            <Label fx:id="fiveBar13" />
-            <Label fx:id="fiveBar14" />
-            <Label fx:id="fiveBar15" />
-            <Label fx:id="fiveBar16" />
-            <Label fx:id="fiveBar17" />
-            <Label fx:id="fiveBar18" />
-            <Label fx:id="fiveBar19" />
-            <Label fx:id="fiveBar20" />
-            <Label fx:id="fiveBar21" />
-            <Label fx:id="fiveBar22" />
-            <Label fx:id="fiveBar23" />
-            <Label fx:id="fiveBar24" />
-            <Label fx:id="fiveBar25" />
-            <Label fx:id="fiveBar26" />
-            <Label fx:id="fiveBar27" />
-            <Label fx:id="fiveBar28" />
-            <Label fx:id="fiveBar29" />
-            <Label fx:id="fiveBar30" />
-            <Label fx:id="fiveBar31" />
-            <Label fx:id="fiveBar32" />
-            <Label fx:id="fiveBar33" />
-            <Label fx:id="fiveBar34" />
-            <Label fx:id="fiveBar35" />
-            <Label fx:id="fiveBar36" />
-            <Label fx:id="fiveBar37" />
-            <Label fx:id="fiveBar38" />
-            <Label fx:id="fiveBar39" />
+            <Label fx:id="fiveBar0" styleClass="labelBar" />
+            <Label fx:id="fiveBar1" styleClass="labelBar" />
+            <Label fx:id="fiveBar2" styleClass="labelBar" />
+            <Label fx:id="fiveBar3" styleClass="labelBar" />
+            <Label fx:id="fiveBar4" styleClass="labelBar" />
+            <Label fx:id="fiveBar5" styleClass="labelBar" />
+            <Label fx:id="fiveBar6" styleClass="labelBar" />
+            <Label fx:id="fiveBar7" styleClass="labelBar" />
+            <Label fx:id="fiveBar8" styleClass="labelBar" />
+            <Label fx:id="fiveBar9" styleClass="labelBar" />
+            <Label fx:id="fiveBar10" styleClass="labelBar" />
+            <Label fx:id="fiveBar11" styleClass="labelBar" />
+            <Label fx:id="fiveBar12" styleClass="labelBar" />
+            <Label fx:id="fiveBar13" styleClass="labelBar" />
+            <Label fx:id="fiveBar14" styleClass="labelBar" />
+            <Label fx:id="fiveBar15" styleClass="labelBar" />
+            <Label fx:id="fiveBar16" styleClass="labelBar" />
+            <Label fx:id="fiveBar17" styleClass="labelBar" />
+            <Label fx:id="fiveBar18" styleClass="labelBar" />
+            <Label fx:id="fiveBar19" styleClass="labelBar" />
+            <Label fx:id="fiveBar20" styleClass="labelBar" />
+            <Label fx:id="fiveBar21" styleClass="labelBar" />
+            <Label fx:id="fiveBar22" styleClass="labelBar" />
+            <Label fx:id="fiveBar23" styleClass="labelBar" />
+            <Label fx:id="fiveBar24" styleClass="labelBar" />
+            <Label fx:id="fiveBar25" styleClass="labelBar" />
+            <Label fx:id="fiveBar26" styleClass="labelBar" />
+            <Label fx:id="fiveBar27" styleClass="labelBar" />
+            <Label fx:id="fiveBar28" styleClass="labelBar" />
+            <Label fx:id="fiveBar29" styleClass="labelBar" />
+            <Label fx:id="fiveBar30" styleClass="labelBar" />
+            <Label fx:id="fiveBar31" styleClass="labelBar" />
+            <Label fx:id="fiveBar32" styleClass="labelBar" />
+            <Label fx:id="fiveBar33" styleClass="labelBar" />
+            <Label fx:id="fiveBar34" styleClass="labelBar" />
+            <Label fx:id="fiveBar35" styleClass="labelBar" />
+            <Label fx:id="fiveBar36" styleClass="labelBar" />
+            <Label fx:id="fiveBar37" styleClass="labelBar" />
+            <Label fx:id="fiveBar38" styleClass="labelBar" />
+            <Label fx:id="fiveBar39" styleClass="labelBar" />
          </children>
       </VBox>
       <VBox fx:id="boxFiveSell" layoutX="565.0" layoutY="127.0" prefHeight="200.0" prefWidth="100.0" styleClass="boxFiveSell" AnchorPane.rightAnchor="345.0" AnchorPane.topAnchor="0.0">
