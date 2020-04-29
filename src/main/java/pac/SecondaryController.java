@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -34,6 +35,8 @@ public class SecondaryController {
     public VBox boxFourBar;
     @FXML
     public VBox boxFiveBar;
+    @FXML
+    public TextField textFiledVolume;
     @FXML
     private VBox boxPrice;
     @FXML
@@ -168,6 +171,7 @@ public class SecondaryController {
             priceOpen = Double.parseDouble(listTick.get(listTick.size() - 1).split("\\s+")[1]);
             return;
         }
+
         List<String> tempList = new ArrayList<>();
         for (int i = listTick.size() - 1; i >= 0; i--) {
             if (!timeMsk.equals(listTick.get(i).split("\\s+")[5].substring(10))) {
@@ -177,8 +181,6 @@ public class SecondaryController {
                 tempList.add(listTick.get(i));
             } else break;
         }
-
-
 
         countSameTimeMsk = getCountSameTimeMsk(tempCurrent);
         timeMsk = lastElement.split("\\s+")[5].substring(10);
@@ -255,17 +257,18 @@ public class SecondaryController {
     private void printOneBar(List<String> list) {
         Map<Double, Integer> mapSell = new TreeMap<>();
         Map<Double, Integer> mapBuy = new TreeMap<>();
+        int volTextField = Integer.parseInt((textFiledVolume.getText()));
         list.forEach(x-> {
             String[] str = x.split("\\s+");
             double price = Double.parseDouble(str[1]);
             int volume = Integer.parseInt(str[0]);
             char type = str[2].charAt(0);
-            if (type == 's') {
+            if (type == 's' && volume >= volTextField) {
                 if (mapSell.containsKey(price))
                     mapSell.put(price, mapSell.get(price) + volume);
                 else
                     mapSell.put(price, volume);
-            } else {
+            } else if (volume >= volTextField) {
                 if (mapBuy.containsKey(price))
                     mapBuy.put(price, mapBuy.get(price) + volume);
                 else
